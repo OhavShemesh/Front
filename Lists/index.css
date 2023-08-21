@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+  width: 0;
+}
+body {
+  background-color: #dbc4f0;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+/* header */
+.header h1 {
+  text-align: center;
+  font-size: 6rem;
+}
+/* Lists */
+.lists {
+  display: grid;
+  gap: 60px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.list {
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+.list:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+/* Shopping List */
+.ShoppingList {
+  margin-top: 20px;
+  height: 400px;
+  background-color: #faf3f0;
+  border-radius: 0 30px 30px 0;
+  box-shadow: 0 0 16px rgb(173, 172, 177);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ShoppingList h1 {
+  color: #ffcacc;
+  text-align: center;
+  font-size: 4rem;
+  text-shadow: 4px 4px 0 rgb(201, 152, 160);
+}
+.ShoppingList img{
+  width: 400px;
+  height: 250px;
+  margin-top: 30px;
+}
+/* Birthday */
+.Birthday {
+  margin-top: 20px;
+  height: 400px;
+  background-color: #faf3f0;
+  border-radius: 30px;
+  box-shadow: 0 0 16px rgb(173, 172, 177);
+}
+.Birthday h1 {
+  color: #ffcacc;
+  text-align: center;
+  font-size: 4rem;
+  text-shadow: 4px 4px 0 rgb(201, 152, 160);
+}
+/* To Do List */
+.ToDoList {
+  margin-top: 20px;
+  height: 400px;
+  background-color: #faf3f0;
+  border-radius: 30px 0 0 30px;
+  box-shadow: 0 0 16px rgb(173, 172, 177);
+}
+.ToDoList h1 {
+  color: #ffcacc;
+  text-align: center;
+  font-size: 4rem;
+  text-shadow: 4px 4px 0 rgb(201, 152, 160);
+}

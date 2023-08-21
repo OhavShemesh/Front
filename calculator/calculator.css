@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: lightgreen;
+}
+.all {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  background-color: lightblue;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-top: 30px;
+}
+
+input {
+  margin-bottom: 20px;
+  width: 480px;
+  height: 100px;
+  font-size: 5rem;
+  border: 6px solid grey;
+  text-align: center;
+  box-shadow: 0 5px 2px grey;
+}
+
+/* container */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 120px);
+  grid-template-rows: repeat(4, 120px);
+  gap: 10px;
+}
+.container button {
+  border: 1px solid #000;
+  font-size: 7rem;
+  text-align: center;
+  box-shadow: 0 5px 2px grey;
+}
+.container button:active {
+  box-shadow: 5px 5px grey inset;
+}
+.divide img {
+  width: 70px;
+}
+
+/* box */
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(4, 120px);
+  grid-template-rows: repeat(1, 120px);
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.box button {
+  border: 1px solid #000;
+  font-size: 6rem;
+  display: block;
+  box-shadow: 0 5px 2px grey;
+}
+.box button:active {
+  box-shadow: 5px 5px grey inset;
+}
+.box button img {
+  width: 60px;
+  height: 70px;
+}
+.box .clearall {
+  font-size: 3rem;
+}
+.box .precent {
+  font-size: 6rem;
+}
+.historybox {
+  position: absolute;
+  right: 120px;
+  width: 400px;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.history {
+  width: 400px;
+  height: 50px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.historybox h3 {
+  font-weight: normal;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 400px;
+}
+.hidden {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 0;
+  overflow: auto;
+  transition: all 1s ease-in-out;
+}
+.historybox .clearhistory {
+  width: 250px;
+  height: 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: none;
+}
+.nothing {
+  height: 20px;
+}
+.inhistory {
+  height: 600px;
+}

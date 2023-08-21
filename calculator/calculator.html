@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <div class="historybox">
+      <button class="history">History</button>
+      <div class="hidden">
+        <div class="inhistory"></div>
+        <div class="nothing"></div>
+      </div>
+      <button class="clearhistory">Clear history</button>
+    </div>
+    <div class="all">
+      <input class="display" type="text" />
+      <div class="box">
+        <button></button>
+        <button class="precent"></button>
+        <button class="clearall">Clear</button>
+        <button class="backone">
+          <img src="delete-left-solid.svg" alt="" />
+        </button>
+      </div>
+      <div class="container">
+        <button value="1" class="one">1</button>
+        <button value="2" class="two">2</button>
+        <button value="3" class="three">3</button>
+        <button value="+" class="plus">+</button>
+        <button value="4" class="four">4</button>
+        <button value="5" class="five">5</button>
+        <button value="6" class="six">6</button>
+        <button value="-" class="minus">-</button>
+        <button value="7" class="seven">7</button>
+        <button value="8" class="eight">8</button>
+        <button value="9" class="nine">9</button>
+        <button value="*" class="multi">X</button>
+        <button value="0" class="zero">0</button>
+        <button value="." class="dot">.</button>
+        <button value="/" class="divide">
+          <img src="divide-solid.svg" alt="" />
+        </button>
+        <button value="=" class="equals">=</button>
+      </div>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>

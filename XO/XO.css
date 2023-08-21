@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+  width: 0;
+}
+body {
+  background-color: rgb(103, 152, 158);
+}
+
+#all {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 25vw 50vw 25vw;
+  font-family: "Audiowide", cursive;
+}
+/* Full Screen */
+.nonegrid {
+  font-size: 2rem;
+  margin-top: 20px;
+  color: white;
+  text-shadow: 1px 1px 12px rgb(0, 0, 0);
+  font-weight: lighter;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.boardgrid {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.scoregrid {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* board */
+.boardgrid h1 {
+  font-size: 4rem;
+  margin-top: 20px;
+  color: white;
+  text-shadow: 1px 1px 12px rgb(0, 0, 0);
+  font-weight: lighter;
+}
+.board {
+  width: 600px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.board .cell {
+  border: 3px solid white;
+  font-size: 14rem;
+  color: white;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0;
+  width: 600px;
+  height: 600px;
+}
+
+.cell:first-child {
+  border-top: none;
+  border-left: none;
+}
+
+.cell:nth-child(2) {
+  border-top: none;
+}
+
+.cell:nth-child(3) {
+  border-top: none;
+  border-right: none;
+}
+
+.cell:nth-child(4) {
+  border-left: none;
+}
+
+.cell:nth-child(6) {
+  border-right: none;
+}
+
+.cell:nth-child(7) {
+  border-left: none;
+  border-bottom: none;
+}
+
+.cell:nth-child(8) {
+  border-bottom: none;
+}
+
+.cell:nth-child(9) {
+  border-bottom: none;
+  border-right: none;
+}
+/* buttons */
+.buttons {
+  display: flex;
+  gap: 50px;
+}
+.restart,
+.undo,
+.newgame,
+.setbtn {
+  font-size: 2.5rem;
+  font-family: "Audiowide", cursive;
+  padding: 5px 10px 5px 10px;
+  border: none;
+  background-color: rgb(161, 194, 199);
+  box-shadow: 0 0 8px black;
+  cursor: pointer;
+}
+
+/* score */
+.scoregrid h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+  text-decoration: underline;
+  text-shadow: 0 0 7px black;
+}
+.scorexo {
+  display: grid;
+  grid-template-columns: auto auto;
+  font-size: 2rem;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+  gap: 60px;
+  font-size: 3rem;
+  color: white;
+}
+.newgame {
+  margin-top: 460px;
+}
+/* gamesetiings */
+.nonegrid select {
+  font-size: 2rem;
+  margin-top: 30px;
+  font-family: "Audiowide", cursive;
+  background-color: rgb(161, 194, 199);
+  box-shadow: 0 0 8px black;
+  text-align: center;
+  background-color: white;
+}
+select option {
+  padding: 5px;
+  background-color: white;
+}
+.setbtn {
+  width: 100px;
+  height: 50px;
+  line-height: 0;
+  margin-top: 50px;
+}
